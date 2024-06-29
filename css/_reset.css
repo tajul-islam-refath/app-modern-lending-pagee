@@ -1,0 +1,19 @@
+/*  This is a light reset to get rid of the browser's base styling
+    a lot more can be added here. See https://meyerweb.com/eric/tools/css/reset/
+    for a more complete code snippet.
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  scroll-behavior: smooth;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style-type: none;
+}
