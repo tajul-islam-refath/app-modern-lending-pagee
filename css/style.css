@@ -62,14 +62,14 @@ body {
 }
 
 .icon-box {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 2rem;
   img {
-    width: 35px;
+    width: 24px;
   }
 }
 
@@ -265,6 +265,32 @@ body {
         font-family: var(--font-family);
         margin-top: 0.8rem;
       }
+    }
+  }
+}
+
+.feature_two {
+  .feature_two__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-top: 6rem;
+  }
+  .feature_two__card {
+    display: flex;
+    gap: 1.6rem;
+    h3 {
+      font-size: 1.8rem;
+      font-family: var(--font-family);
+      font-weight: bold;
+      line-height: 3rem;
+      color: var(--text-primary);
+    }
+    p {
+      font-size: 1.2rem;
+      font-family: var(--font-family);
+      line-height: 2rem;
+      color: var(--text-secondery);
     }
   }
 }
