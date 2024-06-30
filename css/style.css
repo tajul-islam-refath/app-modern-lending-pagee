@@ -294,3 +294,48 @@ body {
     }
   }
 }
+
+.core_features_two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  .right {
+    flex: 1;
+  }
+  .right img {
+    width: 420px;
+    height: 100%;
+  }
+  .left {
+    h6 {
+      font-size: 1.4rem;
+      line-height: 4rem;
+      letter-spacing: 0.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: var(--primary-light);
+    }
+    h2 {
+      font-size: 4.2rem;
+      line-height: 5.5rem;
+      letter-spacing: -0.15rem;
+      font-weight: bold;
+      color: var(--text-primary);
+      font-family: var(--font-family);
+    }
+    p {
+      font-size: 1.4rem;
+      line-height: 3rem;
+      letter-spacing: 0.2rem;
+      color: var(--text-secondery);
+      font-family: var(--font-family);
+      margin: 1rem 0;
+    }
+    .btn {
+      background-color: var(--primary);
+      color: #ffff;
+    }
+  }
+}
