@@ -6,6 +6,8 @@
 :root {
   --primary: #1f3e76;
   --primary-light: #2f5392;
+  --text-primary: #0f2137;
+  --text-secondery: #343d48;
   --bg-gradient: linear-gradient(to bottom right, #1e3c72 100%, #2a5298 100%);
   --font-family: "DM Sans", sans-serif;
 }
@@ -20,6 +22,24 @@ body {
   font-size: 1.6rem;
   font-family: var(--font-family);
   overflow-x: hidden;
+}
+
+.section-title-sm {
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 4rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  color: var(--primary-light);
+}
+
+.section-title-big {
+  font-size: 3.6rem;
+  text-align: center;
+  line-height: 4rem;
+  font-weight: bold;
+  color: var(--text-primary);
 }
 
 /* button style  */
@@ -41,6 +61,18 @@ body {
   line-height: 2.4rem;
 }
 
+.icon-box {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  img {
+    width: 35px;
+  }
+}
+
 /* header style  */
 .header {
   min-height: 100vh;
@@ -49,6 +81,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -2;
+  border-bottom-right-radius: 20rem;
 }
 .nav {
   display: flex;
@@ -132,9 +165,47 @@ body {
   .hero__pattern {
     position: absolute;
     top: 2rem;
-    right: -84px;
-    width: 280px;
-    height: 300px;
+    right: -36px;
+    width: 220px;
+    height: 260px;
     z-index: 1;
+  }
+}
+
+.feature_one {
+  .feature_one__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    margin-top: 6rem;
+  }
+  .feature_one__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+    h3 {
+      font-size: 1.8rem;
+      font-family: var(--font-family);
+      font-weight: bold;
+      line-height: 3rem;
+      color: var(--text-primary);
+    }
+    p {
+      font-size: 1.5rem;
+      font-family: var(--font-family);
+      line-height: 2.8rem;
+      color: var(--text-secondery);
+    }
+  }
+  .feature_icon_1 {
+    background-color: #e4ffee;
+  }
+  .feature_icon_2 {
+    background-color: #ebf1ff;
+  }
+  .feature_icon_3 {
+    background-color: #ffecef;
   }
 }
