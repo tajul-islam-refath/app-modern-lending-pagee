@@ -1,6 +1,7 @@
 .section {
   min-height: 500px;
   padding: 50px 0;
+  position: relative;
 }
 
 /* .max-container {
