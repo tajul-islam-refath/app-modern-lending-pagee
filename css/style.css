@@ -10,6 +10,12 @@
   --text-secondery: #343d48;
   --bg-gradient: linear-gradient(to bottom right, #1e3c72 100%, #2a5298 100%);
   --font-family: "DM Sans", sans-serif;
+
+  --input-px: 1rem;
+  --input-py: 1rem;
+  --input-redius: 0.8rem;
+  --input-border: 0.1rem;
+  --input-border-color: #ccc;
 }
 
 html {
@@ -430,7 +436,7 @@ body {
     width: 480px;
 
     border-radius: 10px;
-    padding: 30px 30px;
+    padding: 50px 30px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -466,12 +472,15 @@ body {
   }
   .pricing_cards_two {
     background-color: #fff;
+    position: relative;
     .reco {
       background-color: #ef9e48;
       color: #fff;
       padding: 4px 8px;
       border-radius: 4px;
       width: fit-content;
+      position: absolute;
+      top: 10px;
     }
     h5 {
       color: #000;
@@ -491,4 +500,83 @@ body {
       color: #fff;
     }
   }
+}
+
+.contact_us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  .contact_us__right {
+    flex: 1;
+  }
+  .contact_us__right img {
+    width: 420px;
+    height: 100%;
+  }
+  .contact_us__left {
+    .contact_us__title {
+      font-size: 4.2rem;
+      line-height: 5.5rem;
+      letter-spacing: -0.15rem;
+      font-weight: bold;
+      color: var(--primary);
+      font-family: var(--font-family);
+    }
+
+    .contact_us__subtitle {
+      font-size: 1.4rem;
+      line-height: 3rem;
+      letter-spacing: 0.2rem;
+      color: var(--text-secondery);
+      font-family: var(--font-family);
+      margin: 1rem 0;
+    }
+  }
+
+  .form {
+    margin: 2rem 0;
+    .form__group {
+      width: 100%;
+    }
+
+    .from__label {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.4rem;
+    }
+    .from__input {
+      width: 100%;
+      padding: var(--input-py) var(--input-px);
+      border: var(--input-border) solid var(--input-border-color);
+      border-radius: var(--input-redius);
+      &:focus {
+        outline: none;
+        border-color: var(--primary-light);
+      }
+    }
+    .form__button {
+      background-color: var(--primary);
+      color: #ffff;
+      cursor: pointer;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.gap-6 {
+  gap: 6px;
 }
